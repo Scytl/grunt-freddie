@@ -1,0 +1,31 @@
+{
+  "name": "grunt-fess",
+  "description": "Start a fess server",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pfraces/grunt-fess.git",
+  "author": "Pau Fracés <pfraces@gmail.com>",
+  "license": "MIT",  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pfraces/grunt-fess.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pfraces/grunt-fess/issues"
+  },
+  "dependencies": {
+    "fess": "latest"
+  },
+  "peerDependencies": {
+    "grunt": "latest"
+  },
+  "keywords": [
+    "gruntplugin",
+    "fess",
+    "static",
+    "mock",
+    "proxy",
+    "server",
+    "http",
+    "https"
+  ]
+}
