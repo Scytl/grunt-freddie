@@ -2,17 +2,17 @@
 
 var fess = require('fess');
 
-var defaults = {
-  root: process.cwd(),
-  port: 3000,
-  name: 'server'
-};
-
 module.exports = function (grunt) {
   grunt.registerMultiTask('fess', 'Start a fess server', function () {
-    var options = this.options(defaults);
-    this.async();
+    var done = this.async(),
+        keepAlive = grunt.option('keep-alive');
 
-    fess(options);
+    fess(this.options({
+      name: this.target,
+      onListen: function (name, port) {
+        console.log(name, 'listening on port', port);
+        if (!keepAlive) { done(); }
+      }
+    }));
   });
 };
