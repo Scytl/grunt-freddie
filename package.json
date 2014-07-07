@@ -1,16 +1,16 @@
 {
   "name": "grunt-fess",
   "description": "Start a fess server",
-  "version": "0.0.3",
-  "homepage": "https://github.com/pfraces/grunt-fess.git",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Scytl/grunt-fess.git",
   "author": "Pau Fracés <pfraces@gmail.com>",
   "license": "MIT",  
   "repository": {
     "type": "git",
-    "url": "https://github.com/pfraces/grunt-fess.git"
+    "url": "https://github.com/Scytl/grunt-fess.git"
   },
   "bugs": {
-    "url": "https://github.com/pfraces/grunt-fess/issues"
+    "url": "https://github.com/Scytl/grunt-fess/issues"
   },
   "dependencies": {
     "fess": "latest"
