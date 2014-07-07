@@ -135,7 +135,7 @@ module.exports = function (grunt) {
       }
     }
   });
-});
+};
 ```
 
 License
