@@ -93,6 +93,51 @@ Any specified option will be passed through directly to **fess**, thus you can
 specify any option that **fess** supports. See the [fess documentation][7] for
 a list of supported options.
 
+The target name is used as server name, so you does not need to specify it
+through the `name` config attribute
+
+### Sample configuration
+
+```js
+module.exports = function (grunt) {
+  grunt.loadNpmTasks('grunt-fess');
+  grunt.loadNpmTasks('grunt-daemon');
+
+  grunt.registerTask('fessd', function () {
+    grunt.task.run(['daemon', 'fess'].concat(this.args).join(':'));
+  });
+
+  grunt.initConfig({
+    fess: {
+      dev: {
+        options: {
+          root: 'build',
+          port: 3000,
+          mock: {
+            '/api': 'build/assets/mocks'
+          }
+        }
+      },
+      pre: {
+        options: {
+          root: 'dist/bin',
+          port: 4000,
+          proxy: {
+            '/api': 'http://backend.com:8080/'
+          }
+        }
+      },
+      doc: {
+        options: {
+          root: 'doc',
+          port: 5000
+        }
+      }
+    }
+  });
+});
+```
+
 License
 -------
 
