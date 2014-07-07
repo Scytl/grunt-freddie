@@ -49,8 +49,8 @@ blocking plugins like [grunt-contrib-watch][5] or [grunt-daemon][6]
 
 ### grunt-contrib-watch
 
-If you register a task with fess targets and a watch at the end, the servers
-will keepalive as long as the watch daemon is running
+If you register a task with **fess** targets and a [watch][5] at the end, the
+servers will keep alive as long as the [watch][5] daemon is running
 
 ```js
 grunt.renameTask('watch', 'delta');
