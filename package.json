@@ -1,26 +1,26 @@
 {
-  "name": "grunt-fess",
-  "description": "Start a fess server",
-  "version": "0.1.0",
-  "homepage": "https://github.com/Scytl/grunt-fess.git",
+  "name": "grunt-freddie",
+  "description": "Start a freddie server",
+  "version": "0.2.0",
+  "homepage": "https://github.com/Scytl/grunt-freddie.git",
   "author": "Pau Fracés <pfraces@gmail.com>",
   "license": "MIT",  
   "repository": {
     "type": "git",
-    "url": "https://github.com/Scytl/grunt-fess.git"
+    "url": "https://github.com/Scytl/grunt-freddie.git"
   },
   "bugs": {
-    "url": "https://github.com/Scytl/grunt-fess/issues"
+    "url": "https://github.com/Scytl/grunt-freddie/issues"
   },
   "dependencies": {
-    "fess": "latest"
+    "freddie": "latest"
   },
   "peerDependencies": {
     "grunt": "latest"
   },
   "keywords": [
     "gruntplugin",
-    "fess",
+    "freddie",
     "static",
     "mock",
     "proxy",
