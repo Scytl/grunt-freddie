@@ -39,7 +39,7 @@ From the [grunt-contrib-connect][4] documentation:
 
 Even if that is a valid use case for the **freddie** plugin, its main purpose
 is to launch project-related servers for its use during development such as
-mock or proxy server for the project runtime, documentation server, etc ...
+static or proxy servers for the project runtime, documentation server, etc ...
 
 That servers must keep running while developing, better in a console reserved
 for them so we can see logging information and stop them with `Ctrl+C`.
@@ -113,8 +113,8 @@ module.exports = function (grunt) {
         options: {
           root: 'build',
           port: 3000,
-          mock: {
-            '/api': 'build/assets/mocks'
+          fixtures: {
+            '/api': 'test/fixtures'
           }
         }
       },
