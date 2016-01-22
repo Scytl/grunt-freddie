@@ -1,10 +1,10 @@
 {
   "name": "grunt-freddie",
   "description": "Start a freddie server",
-  "version": "0.2.2",
+  "version": "0.4.0",
   "homepage": "https://github.com/Scytl/grunt-freddie.git",
   "author": "Pau Fracés <pfraces@gmail.com>",
-  "license": "MIT",  
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Scytl/grunt-freddie.git"
@@ -13,8 +13,8 @@
     "url": "https://github.com/Scytl/grunt-freddie/issues"
   },
   "dependencies": {
-    "freddie": "*"
-  },
+    "freddie": "0.4.*"
+  } ,
   "peerDependencies": {
     "grunt": "*"
   },
